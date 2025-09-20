@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Umar Hashan N - Portfolio</title>
+  <style>
+    :root {
+      --primary: #0f3d5c;
+      --secondary: #5c717a;
+      --accent: #f39c12;
+      --bg: #f4f6f9;
+      --white: #ffffff;
+      --light: #eef2f6;
+      --text: #333;
+    }
+
+   body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: var(--white);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .profile-img {
+      display: block;
+      margin: 0 auto 40px;
+      width: 150px;
+      height: 150px;
+      border-radius: 60%;
+      border: 4px solid var(--primary);
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .profile-img:hover { transform: scale(1.05); }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      margin: 12px 0 6px;
+      font-size: 2.4rem;
+      color: var(--primary);
+    }
+
+    .sub-header {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      color: var(--primary);
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    ul.info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.info-list li {
+      padding: 8px 0;
+      font-size: 1rem;
+    }
+
+    .skills, .projects, .certs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .skills ul, .certs ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills ul li, .certs ul li {
+      background: var(--light);
+      margin: 6px 0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .skills ul li:hover, .certs ul li:hover {
+      background: #dde6ed;
+    }
+
+    .projects .project-item {
+      margin-bottom: 16px;
+      padding: 14px 18px;
+      background: linear-gradient(135deg, #f9f9fb, #eef2f6);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .projects .project-item:hover {
+      transform: translateX(5px);
+    }
+
+    .declaration {
+      background: #fff9f2;
+      padding: 16px;
+      border-radius: 10px;
+      font-style: italic;
+      color: #5a4634;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: var(--primary);
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 24px; }
+      .skills, .projects, .certs { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image.jpg" alt="Profile Picture" class="profile-img">
+
+    <div class="header">
+      <h1>Mohamed Umar Hashan N</h1>
+      <div class="sub-header">Front-End Web Developer</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Contact</h2>
+      <ul class="info-list">
+        <li>📞 +91 7871038286</li>
+        <li>✉ <a href="mailto:umar2003hashan@gmail.com">umar2003hashan@gmail.com</a></li>
+        <li>📍 Ramanathapuram, Tamil Nadu</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Career Objective</h2>
+      <p>To obtain a creative and challenging position in an organization that fosters self-improvement, leadership growth, and contribution to organizational success through technical expertise, innovation, and logical thinking.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <ul class="info-list">
+        <li><strong>B.E - CSE</strong> (2021–2025), Mohamed Sathak Engineering College, Kilakarai — <em>CGPA: 7.8</em></li>
+        <li><strong>HSC</strong> (2021), Allwin School, Ramnad — <em>81%</em></li>
+      </ul>
+    </div>
+
+    <div class="section skills">
+      <div>
+        <h2 class="section-title">Technical Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React.js</li>
+          <li>SQL</li>
+          <li>WordPress</li>
+          <li>MS Excel & Word</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title">Expertise</h2>
+        <ul>
+          <li>Creative Thinking</li>
+          <li>Leadership</li>
+          <li>Communication</li>
+          <li>Web Design</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Areas of Interest</h2>
+      <p>Front-End Development, UI/UX Design, Collaborative Web Projects</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Languages</h2>
+      <p>English, Tamil</p>
+    </div>
+
+    <div class="section projects">
+      <div>
+        <h2 class="section-title">Projects</h2>
+        <div class="project-item">
+          <strong>Stock Management App (2024)</strong><br>
+          Designed with HTML, CSS, JavaScript, SQL, React.js, and APIs for efficient inventory tracking.
+        </div>
+        <div class="project-item">
+          <strong>Grocery Website (2025)</strong><br>
+          Interactive e-commerce platform built with React.js, SQL, and responsive UI principles.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Internship</h2>
+      <ul class="info-list">
+        <li><strong>PANTECH E-LEARNING (2024)</strong>: Full Stack Web Development (Django) — One Month</li>
+      </ul>
+    </div>
+
+    <div class="section certs">
+      <div>
+        <h2 class="section-title">Certifications</h2>
+        <ul>
+          <li>Python Full Stack Web Development</li>
+          <li>PHP</li>
+          <li>Perl</li>
+          <li>Network Defence</li>
+          <li>Android App Development</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section declaration">
+      <h2 class="section-title">Declaration</h2>
+      <p>I hereby declare that the information provided above is true to the best of my knowledge and belief. I am motivated to apply my skills and contribute effectively to your esteemed organization.</p>
+    </div>
+
+    <div class="social-links">
+      <a href="mailto:umar2003hashan@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/umarhashan05" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/Mohamed-Umar-Hashan" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
